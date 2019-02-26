@@ -11794,23 +11794,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\chokl\\.nuget\\packages\\": {},
+    "C:\\Users\\rachel\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chokl\\Source\\Repos\\BuySellApplication\\BuySellApplication\\BuySellApplication.csproj",
+      "projectUniqueName": "C:\\Users\\rachel\\source\\repos\\BuySellApplication\\BuySellApplication\\BuySellApplication.csproj",
       "projectName": "BuySellApplication",
-      "projectPath": "C:\\Users\\chokl\\Source\\Repos\\BuySellApplication\\BuySellApplication\\BuySellApplication.csproj",
-      "packagesPath": "C:\\Users\\chokl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chokl\\Source\\Repos\\BuySellApplication\\BuySellApplication\\obj\\",
+      "projectPath": "C:\\Users\\rachel\\source\\repos\\BuySellApplication\\BuySellApplication\\BuySellApplication.csproj",
+      "packagesPath": "C:\\Users\\rachel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rachel\\source\\repos\\BuySellApplication\\BuySellApplication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\chokl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rachel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
