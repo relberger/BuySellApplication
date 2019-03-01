@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace TodoApi.Models
+namespace BuySellApi.Models
 {
-    public class TodoItem
+    public class BuySellItem
     {
+        public long ID { get; set; }
         public string Title { get; set; }
         public DateTime AddedOn { get; set; }
         public string Description { get; set; }
