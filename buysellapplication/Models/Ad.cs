@@ -13,6 +13,6 @@ namespace BuySellApi.Models
         public string Description { get; set; }
         public double Price { get; set; }
         public string ImageUrl { get; set; }
-        public int pageNumber { get; set; }
+        public int PageNumber { get; set; }
     }
 }

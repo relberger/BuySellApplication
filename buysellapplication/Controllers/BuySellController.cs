@@ -9,7 +9,7 @@ using BuySellApi.Models;
 
 namespace BuySellApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[BuySell]")]
     [ApiController]
     public class BuySellController : ControllerBase
     {
@@ -50,7 +50,7 @@ namespace BuySellApi.Controllers
 
             foreach (Ad ad in listAds)
             {
-                if (ad.pageNumber == pageNumber)
+                if (ad.PageNumber == pageNumber)
                 {
                     ads.Add(ad);
                 }

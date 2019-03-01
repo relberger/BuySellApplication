@@ -1,14 +1,23 @@
 ﻿<!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="buySellApp">
 <head>
     <meta charset="utf-8">
     <title>My HTML File</title>
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
     <script src="lib/angular/angular.js"></script>
+    <script src="app.js"></script>
 </head>
-<body>
+<body ng-controller="AdListController">
 
-    <p>Nothing here {{'yet' + '!'}}</p>
+    <ul>
+        <li ng-repeat="ad in ads">
+            <span>{{ad.title}}</span>
+            <span>{{ad.addedOn}}</span>
+            <span>{{ad.description}}</span>
+            <span>{{ad.price}}</span>
+            <img src="{{ad.imageUrl}}" alt="{{{{ad.title}}}}">
+        </li>
+    </ul>
 
 </body>
 </html>
