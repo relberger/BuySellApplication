@@ -8,6 +8,6 @@ namespace BuySellApi.Models
         {
         }
 
-        public DbSet<BuySellItem> BuySellItems { get; set; } 
+        public DbSet<Ad> Ads { get; set; } 
     }
 }

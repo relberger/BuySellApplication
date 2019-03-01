@@ -19,12 +19,44 @@ namespace BuySellApi.Controllers
         {
             _context = context;
 
-            if (_context.BuySellItems.Count() == 0)
+            if (_context.Ads.Count() == 0)
             {
                 // create new BuySellItem if collection is empty - can't delete all BuySellItems
-                _context.BuySellItems.Add(new BuySellItem { Name = "Item1" });
+                _context.Ads.Add(new Ad { Title = "Item1" });
                 _context.SaveChanges();
             }
+        }
+
+        //GET: api/BuySell/{id}
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Ad>> GetAdById(long id)
+        {
+            var ad = await _context.Ads.FindAsync(id);
+
+            if (ad == null)
+            {
+                return NotFound();
+            }
+
+            return ad;
+        }
+
+        //GET: api/BuySell/{pageNumber}
+        [HttpGet("{pageNumber}")]
+        public async Task<ActionResult<IEnumerable<Ad>>> GetAllAds(int pageNumber)
+        {
+            var listAds = await _context.Ads.ToListAsync();
+            List<Ad> ads = new List<Ad>();
+
+            foreach (Ad ad in listAds)
+            {
+                if (ad.pageNumber == pageNumber)
+                {
+                    ads.Add(ad);
+                }
+            }
+
+            return ads;
         }
     }
 }
