@@ -19,10 +19,10 @@
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="pages/furniture-category.html">Furniture</a></li>
-                        <li><a href="pages/books-category.html">Books</a></li>
-                        <li><a href="pages/cars-category.html">Cars</a></li>
-                        <li><a href="pages/games-category.html">Games</a></li>
+                        <li><a href="pages/categories/furniture-category.html">Furniture</a></li>
+                        <li><a href="pages/categories/books-category.html">Books</a></li>
+                        <li><a href="pages/categories/cars-category.html">Cars</a></li>
+                        <li><a href="pages/categories/games-category.html">Games</a></li>
                     </ul>
                 </li>
             </ul>
@@ -31,7 +31,7 @@
     <ul>
         <li ng-repeat="ad in ads">
             <img src="{{ad.imageUrl}}" alt="{{ad.title}}" height="100" width="100">
-            <span>{{ad.title}}</span>
+            <span><a href="pages/ad-pages/ad{{ad.id}}">{{ad.title}}</a></span>
             <span>{{ad.addedOn}}</span>
             <span>{{ad.description}}</span>
             <span>{{ad.price}}</span>

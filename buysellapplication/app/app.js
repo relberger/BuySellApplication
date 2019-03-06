@@ -5,12 +5,6 @@ var buySellApp = angular.module('buySellApp', []).
         function AdListController($scope, adService)
         {
             $scope.ads = adService.getAllAds();
-
-            //$scope.getAdById(id) = function (id)
-            //{
-            //    getAdById(id);
-            //};
-
         }])
     .factory('adService', [function ()
     {
@@ -24,6 +18,18 @@ var buySellApp = angular.module('buySellApp', []).
 
         var ads =
             [
+                {
+                    id: 0,
+                    title: 'Bookshelf',
+                    addedOn: '1/10/2019',
+                    description: 'Four shelves',
+                    price: 20,
+                    imageUrl: 'https://content.haycdn.com/mgen/master:WALM5331.jpg?is=400,400,0xffffff',
+                    category: categories.FURNITURE,
+                    contactName: 'Sirius Black',
+                    email: 'siriusblack@gmail.com',
+                    phone: '3475692153'
+                },
                 {
                     id: 1,
                     title: 'Couch',
@@ -131,18 +137,6 @@ var buySellApp = angular.module('buySellApp', []).
                     contactName: 'Severus Snape',
                     email: 'snape@hogwarts.edu',
                     phone: '9082526947'
-                },
-                {
-                    id: 10,
-                    title: 'Bookshelf',
-                    addedOn: '1/10/2019',
-                    description: 'Four shelves',
-                    price: 20,
-                    imageUrl: 'https://content.haycdn.com/mgen/master:WALM5331.jpg?is=400,400,0xffffff',
-                    category: categories.FURNITURE,
-                    contactName: 'Sirius Black',
-                    email: 'siriusblack@gmail.com',
-                    phone: '3475692153'
                 }
             ];
 
