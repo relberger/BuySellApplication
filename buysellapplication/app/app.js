@@ -15,14 +15,14 @@ var buySellApp = angular.module('buySellApp', []).
             };
             
         }]).
-    factory('getAllAds', ['$window', function (window)
+    factory('getAllAds', ['$scope','$window', function ($scope, window)
     {
         var categories =
         {
-            FURNITURE,
-            BOOKS,
-            CARS,
-            GAMES
+            FURNITURE: 1,
+            BOOKS: 2,
+            CARS: 3,
+            GAMES: 4
         };
 
         $scope.ads =
@@ -33,7 +33,7 @@ var buySellApp = angular.module('buySellApp', []).
                     addedOn: '1/1/2019',
                     description: 'Comfortable black couch',
                     price: 50,
-                    imageUrl : 'https://secure.img1-fg.wfcdn.com/im/84352408/resize-h500-w500%5Ecompr-r85/3699/36996219/Ibiza+Sofa.jpg',
+                    imageUrl: 'https://secure.img1-fg.wfcdn.com/im/84352408/resize-h500-w500%5Ecompr-r85/3699/36996219/Ibiza+Sofa.jpg',
                     category: categories.FURNITURE,
                     contactName: 'Hermione Granger',
                     email: 'hermionegranger@gmail.com',
