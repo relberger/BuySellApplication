@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<html lang="en" ng-app="buySellApp">
+<head>
+    <meta charset="utf-8">
+    <title>My HTML File</title>
+    <link rel="stylesheet" href="../../lib/bootstrap/dist/css/bootstrap.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="../../lib/angular/angular.js"></script>
+    <script src="../../app.js"></script>
+</head>
+<body ng-controller="AdListController">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="../../index.html">Home</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../categories/furniture-category.html">Furniture</a></li>
+                        <li><a href="../categories/books-category.html">Books</a></li>
+                        <li><a href="../categories/cars-category.html">Cars</a></li>
+                        <li><a href="../categories/games-category.html">Games</a></li>
+                        <li><a href="../categories/miscellaneous-category.html">Miscellaneous</a></li>
+                        <li><a href="../categories/electronics-category.html">Electronics</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="adPageContent" style="margin-left: 20px;">
+        <h1>{{ads[19].title}}</h1>
+        <p>{{ads[19].addedOn}}</p>
+        <p>{{ads[19].description}}</p>
+        <p>${{ads[19].price}}</p>
+        <p>Contact: {{ads[19].contactName}} - <a href="{{ads[19].email}}">{{ads[19].email}}</a> or {{ads[19].phone}}</p>
+        <img src="{{ads[19].imageUrl}}" alt="{{ads[19].title}}">
+    </div>
+</body>
+</html>

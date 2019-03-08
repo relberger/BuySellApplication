@@ -1,0 +1,61 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\**" />
+    <Content Remove="wwwroot\**" />
+    <EmbeddedResource Remove="wwwroot\**" />
+    <None Remove="wwwroot\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\netcoreapp2.2\BuySellApplication.deps.json" />
+    <Content Include="bin\Debug\netcoreapp2.2\BuySellApplication.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\netcoreapp2.2\BuySellApplication.runtimeconfig.json" />
+    <Content Include="obj\Debug\netcoreapp2.2\BuySellApplication.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Release\netcoreapp2.2\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\netcoreapp2.2\BuySellApplication.dll" />
+    <None Include="bin\Debug\netcoreapp2.2\BuySellApplication.pdb" />
+    <None Include="obj\BuySellApi.csproj.nuget.g.props" />
+    <None Include="obj\BuySellApi.csproj.nuget.g.targets" />
+    <None Include="obj\BuySellApplication.csproj.nuget.cache" />
+    <None Include="obj\BuySellApplication.csproj.nuget.g.props" />
+    <None Include="obj\BuySellApplication.csproj.nuget.g.targets" />
+    <None Include="obj\Debug\netcoreapp2.2\BuySellApi.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.2\BuySellApi.assets.cache" />
+    <None Include="obj\Debug\netcoreapp2.2\BuySellApi.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.2\BuySellApi.RazorAssemblyInfo.cache" />
+    <None Include="obj\Debug\netcoreapp2.2\BuySellApplication.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.2\BuySellApplication.assets.cache" />
+    <None Include="obj\Debug\netcoreapp2.2\BuySellApplication.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.2\BuySellApplication.csprojAssemblyReference.cache" />
+    <None Include="obj\Debug\netcoreapp2.2\BuySellApplication.dll" />
+    <None Include="obj\Debug\netcoreapp2.2\BuySellApplication.pdb" />
+    <None Include="obj\Debug\netcoreapp2.2\BuySellApplication.RazorAssemblyInfo.cache" />
+    <None Include="obj\Debug\netcoreapp2.2\BuySellApplication.RazorTargetAssemblyInfo.cache" />
+    <None Include="obj\Release\netcoreapp2.2\BuySellApi.AssemblyInfoInputs.cache" />
+    <None Include="obj\Release\netcoreapp2.2\BuySellApi.assets.cache" />
+    <None Include="obj\Release\netcoreapp2.2\BuySellApi.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Release\netcoreapp2.2\BuySellApi.RazorAssemblyInfo.cache" />
+    <None Include="obj\Release\netcoreapp2.2\BuySellApplication.AssemblyInfoInputs.cache" />
+    <None Include="obj\Release\netcoreapp2.2\BuySellApplication.assets.cache" />
+    <None Include="obj\Release\netcoreapp2.2\BuySellApplication.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Release\netcoreapp2.2\BuySellApplication.RazorAssemblyInfo.cache" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+</Project>

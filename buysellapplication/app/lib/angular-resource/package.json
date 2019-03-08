@@ -1,32 +1,27 @@
 {
-  "_args": [
-    [
-      "angular-resource@1.7.7",
-      "C:\\Users\\rachel\\source\\repos\\BuySellApplication\\BuySellApplication"
-    ]
-  ],
-  "_from": "angular-resource@1.7.7",
+  "_from": "angular-resource@1.7.x",
   "_id": "angular-resource@1.7.7",
   "_inBundle": false,
   "_integrity": "sha512-158EpvkX2K64yDdlYHaIRxY52M+xcTyvmnSXEDBl6vuMf/DBjLVheoXqXNJzKzbUSfp+rugYIUfj91VblBltPQ==",
   "_location": "/angular-resource",
   "_phantomChildren": {},
   "_requested": {
-    "type": "version",
+    "type": "range",
     "registry": true,
-    "raw": "angular-resource@1.7.7",
+    "raw": "angular-resource@1.7.x",
     "name": "angular-resource",
     "escapedName": "angular-resource",
-    "rawSpec": "1.7.7",
+    "rawSpec": "1.7.x",
     "saveSpec": null,
-    "fetchSpec": "1.7.7"
+    "fetchSpec": "1.7.x"
   },
   "_requiredBy": [
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/angular-resource/-/angular-resource-1.7.7.tgz",
-  "_spec": "1.7.7",
-  "_where": "C:\\Users\\rachel\\source\\repos\\BuySellApplication\\BuySellApplication",
+  "_shasum": "f1961d650c1a9ec625b119274e29068e0e372ae0",
+  "_spec": "angular-resource@1.7.x",
+  "_where": "C:\\Users\\chokl\\source\\repos\\BuySellApplication",
   "author": {
     "name": "Angular Core Team",
     "email": "angular-core+npm@google.com"
@@ -34,6 +29,8 @@
   "bugs": {
     "url": "https://github.com/angular/angular.js/issues"
   },
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "AngularJS module for interacting with RESTful server-side data sources",
   "homepage": "http://angularjs.org",
   "jspm": {

@@ -1,14 +1,43 @@
 ﻿<!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="buySellApp">
 <head>
     <meta charset="utf-8">
     <title>My HTML File</title>
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="lib/angular/angular.js"></script>
+    <script src="app.js"></script>
 </head>
-<body>
-
-    <p>Nothing here {{'yet' + '!'}}</p>
-
+<body ng-controller="AdListController">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Home</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pages/categories/furniture-category.html">Furniture</a></li>
+                        <li><a href="pages/categories/books-category.html">Books</a></li>
+                        <li><a href="pages/categories/cars-category.html">Cars</a></li>
+                        <li><a href="pages/categories/games-category.html">Games</a></li>
+                        <li><a href="pages/categories/miscellaneous-category.html">Miscellaneous</a></li>
+                        <li><a href="pages/categories/electronics-category.html">Electronics</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <ul>
+        <li ng-repeat="ad in ads | limitTo:10">
+            <img src="{{ad.imageUrl}}" alt="{{ad.title}}" height="100" width="100">
+            <span><a href="pages/ad-pages/ad{{ad.id}}">{{ad.title}}</a></span>
+            <span>{{ad.addedOn}}</span>
+            <span>{{ad.description | limitTo:20}}...</span>
+            <span>${{ad.price}}</span>
+        </li>
+    </ul>
 </body>
 </html>

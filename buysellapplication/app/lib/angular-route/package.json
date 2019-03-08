@@ -1,32 +1,27 @@
 {
-  "_args": [
-    [
-      "angular-route@1.7.7",
-      "C:\\Users\\rachel\\source\\repos\\BuySellApplication\\BuySellApplication"
-    ]
-  ],
-  "_from": "angular-route@1.7.7",
+  "_from": "angular-route@1.7.x",
   "_id": "angular-route@1.7.7",
   "_inBundle": false,
   "_integrity": "sha512-nshsCti751h8GfvYQ2nlTbQnaY/q5zvxLctj78sS5SjB8iRDqNbT1NVNz8B/nDQUudjc7etE7xYaTdM8idzq6g==",
   "_location": "/angular-route",
   "_phantomChildren": {},
   "_requested": {
-    "type": "version",
+    "type": "range",
     "registry": true,
-    "raw": "angular-route@1.7.7",
+    "raw": "angular-route@1.7.x",
     "name": "angular-route",
     "escapedName": "angular-route",
-    "rawSpec": "1.7.7",
+    "rawSpec": "1.7.x",
     "saveSpec": null,
-    "fetchSpec": "1.7.7"
+    "fetchSpec": "1.7.x"
   },
   "_requiredBy": [
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/angular-route/-/angular-route-1.7.7.tgz",
-  "_spec": "1.7.7",
-  "_where": "C:\\Users\\rachel\\source\\repos\\BuySellApplication\\BuySellApplication",
+  "_shasum": "0573c8efa87e735bcd4f64f6551a176faca3b6d1",
+  "_spec": "angular-route@1.7.x",
+  "_where": "C:\\Users\\chokl\\source\\repos\\BuySellApplication",
   "author": {
     "name": "Angular Core Team",
     "email": "angular-core+npm@google.com"
@@ -34,6 +29,8 @@
   "bugs": {
     "url": "https://github.com/angular/angular.js/issues"
   },
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "AngularJS router module",
   "homepage": "http://angularjs.org",
   "jspm": {

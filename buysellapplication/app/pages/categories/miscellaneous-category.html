@@ -1,0 +1,45 @@
+﻿<!doctype html>
+<html lang="en" ng-app="buySellApp">
+<head>
+    <meta charset="utf-8">
+    <title>My HTML File</title>
+    <link rel="stylesheet" href="../../lib/bootstrap/dist/css/bootstrap.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="../../lib/angular/angular.js"></script>
+    <script src="../../app.js"></script>
+</head>
+<body ng-controller="AdListController">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="../../index.html">Home</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="furniture-category.html">Furniture</a></li>
+                        <li><a href="books-category.html">Books</a></li>
+                        <li><a href="cars-category.html">Cars</a></li>
+                        <li><a href="games-category.html">Games</a></li>
+                        <li><a href="miscellaneous-category.html">Miscellaneous</a></li>
+                        <li><a href="electronics-category.html">Electronics</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="categoryPageContent">
+        <ul>
+            <li ng-repeat="ad in ads" ng-if="ad.category === 'miscellaneous'">
+                <img src="{{ad.imageUrl}}" alt="{{ad.title}}" height="100" width="100">
+                <span><a href="../ad-pages/ad{{ad.id}}">{{ad.title}}</a></span>
+                <span>{{ad.addedOn}}</span>
+                <span>{{ad.description}}</span>
+                <span>${{ad.price}}</span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
