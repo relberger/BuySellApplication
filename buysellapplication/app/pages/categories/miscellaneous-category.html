@@ -19,24 +19,27 @@
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="../categories/furniture-category.html">Furniture</a></li>
-                        <li><a href="../categories/books-category.html">Books</a></li>
-                        <li><a href="../categories/cars-category.html">Cars</a></li>
-                        <li><a href="../categories/games-category.html">Games</a></li>
-                        <li><a href="../categories/miscellaneous-category.html">Miscellaneous</a></li>
-                        <li><a href="../categories/electronics-category.html">Electronics</a></li>
+                        <li><a href="furniture-category.html">Furniture</a></li>
+                        <li><a href="books-category.html">Books</a></li>
+                        <li><a href="cars-category.html">Cars</a></li>
+                        <li><a href="games-category.html">Games</a></li>
+                        <li><a href="miscellaneous-category.html">Miscellaneous</a></li>
+                        <li><a href="electronics-category.html">Electronics</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
     </nav>
-    <div id="adPageContent" style="margin-left: 20px;">
-        <h1>{{ads[0].title}}</h1>
-        <p>{{ads[0].addedOn}}</p>
-        <p>{{ads[0].description}}</p>
-        <p>${{ads[0].price}}</p>
-        <p>Contact: {{ads[0].contactName}} - <a href="{{ads[0].email}}">{{ads[0].email}}</a> or {{ads[0].phone}}</p>
-        <img src="{{ads[0].imageUrl}}" alt="{{ads[0].title}}">
+    <div id="categoryPageContent">
+        <ul>
+            <li ng-repeat="ad in ads" ng-if="ad.category === 'miscellaneous'">
+                <img src="{{ad.imageUrl}}" alt="{{ad.title}}" height="100" width="100">
+                <span><a href="../ad-pages/ad{{ad.id}}">{{ad.title}}</a></span>
+                <span>{{ad.addedOn}}</span>
+                <span>{{ad.description}}</span>
+                <span>${{ad.price}}</span>
+            </li>
+        </ul>
     </div>
 </body>
 </html>

@@ -23,6 +23,8 @@
                         <li><a href="books-category.html">Books</a></li>
                         <li><a href="cars-category.html">Cars</a></li>
                         <li><a href="games-category.html">Games</a></li>
+                        <li><a href="miscellaneous-category.html">Miscellaneous</a></li>
+                        <li><a href="electronics-category.html">Electronics</a></li>
                     </ul>
                 </li>
             </ul>
@@ -30,17 +32,14 @@
     </nav>
     <div id="categoryPageContent">
         <ul>
-            <li ng-repeat="ad in ads">
-                <span ng-if="ad.category == 'categories.BOOKS'">
-                    <img src="{{ad.imageUrl}}" alt="{{ad.title}}" height="100" width="100">
-                    <span><a href="pages/ad-pages/ad{{ad.id}}">{{ad.title}}</a></span>
-                    <span>{{ad.addedOn}}</span>
-                    <span>{{ad.description}}</span>
-                    <span>{{ad.price}}</span>
-                </span>
+            <li ng-repeat="ad in ads" ng-if="ad.category === 'books'">
+                <img src="{{ad.imageUrl}}" alt="{{ad.title}}" height="100" width="100">
+                <span><a href="../ad-pages/ad{{ad.id}}">{{ad.title}}</a></span>
+                <span>{{ad.addedOn}}</span>
+                <span>{{ad.description}}</span>
+                <span>${{ad.price}}</span>
             </li>
         </ul>
-
     </div>
 </body>
 </html>

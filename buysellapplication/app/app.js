@@ -10,10 +10,12 @@ var buySellApp = angular.module('buySellApp', []).
     {
         var categories =
         {
-            FURNITURE: 1,
-            BOOKS: 2,
-            CARS: 3,
-            GAMES: 4
+            FURNITURE: 'furniture',
+            BOOKS: 'books',
+            CARS: 'cars',
+            GAMES: 'games', 
+            MISCELLANEOUS: 'miscellaneous',
+            ELECTRONICS: 'electronics'
         };
 
         var ads =
@@ -137,6 +139,138 @@ var buySellApp = angular.module('buySellApp', []).
                     contactName: 'Severus Snape',
                     email: 'snape@hogwarts.edu',
                     phone: '9082526947'
+                },
+                {
+                    id: 10,
+                    title: 'Blue duffel bag',
+                    addedOn: '1/10/2019',
+                    description: 'Lightly used duffle bag. 32.5x17x11.5 inches',
+                    price: 10,
+                    imageUrl: 'https://cdn.shopify.com/s/files/1/0230/0765/products/duffle_blue_front.jpg?v=1499524667',
+                    category: categories.MISCELLANEOUS,
+                    contactName: 'Cedric Diggory',
+                    email: 'cedricdiggory@gmail.com',
+                    phone: '3598712456'
+                },
+                {
+                    id: 11,
+                    title: 'Foldable Drying Rack',
+                    addedOn: '1/11/2019',
+                    description: 'Plenty of hanging space. Good alternative to a dryer.',
+                    price: 5,
+                    imageUrl: 'https://i5.walmartimages.com/asr/a2bb5bc4-993e-4ec1-8e63-2f34f10a6b9a_1.b2391ce2ba59c9105ea54d3d4021c775.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF',
+                    category: categories.MISCELLANEOUS,
+                    contactName: 'Argus Filch',
+                    email: 'filch@hogwarts.edu',
+                    phone: '2124579531'
+                },
+                {
+                    id: 12,
+                    title: 'Portable Space Heater',
+                    addedOn: '1/12/2019',
+                    description: 'Lasko 754200 Ceramic Portable Space Heater with Adjustable Thermostat - Perfect For the Home or Home Office',
+                    price: 20,
+                    imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/81Pwq2e1%2B0L._SX425_.jpg',
+                    category: categories.FURNITURE,
+                    contactName: 'Cornelius Fudge',
+                    email: 'fudge@ministry.gov',
+                    phone: '9174563265'
+                },
+                {
+                    id: 13,
+                    title: 'Corkscrew',
+                    addedOn: '1/13/2019',
+                    description: 'Wing corkscrew with ergonomic handle',
+                    price: 2,
+                    imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/61jpEa4QqCL._SY879_.jpg',
+                    category: categories.MISCELLANEOUS,
+                    contactName: 'Lee Jordan',
+                    email: 'leejordan@gmail.com',
+                    phone: '7975314986'
+                },
+                {
+                    id: 14,
+                    title: 'Rubik\x27s Cube',
+                    addedOn: '1/14/2019',
+                    description: 'Good puzzle',
+                    price: 2,
+                    imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/51K7YxVuk2L._SY355_.jpg',
+                    category: categories.GAMES,
+                    contactName: 'Luna Lovegood',
+                    email: 'lunalovegood@yahoo.com',
+                    phone: '5164687913'
+                },
+                {
+                    id: 15,
+                    title: 'Magnetic Letters and Numbers',
+                    addedOn: '1/15/2019',
+                    description: 'Magnetic Letters and Numbers for Educating Kids in Fun -Educational Alphabet Refrigerator Magnets -82 Pieces',
+                    price: 5,
+                    imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/712c7hQkDdL._SX425_.jpg',
+                    category: categories.GAMES,
+                    contactName: 'Remus Lupin',
+                    email: 'lupin@hogwarts.edu',
+                    phone: '4102197823'
+                },
+                {
+                    id: 16,
+                    title: 'Bose SoundLink 2 Bluetooth Headphones',
+                    addedOn: '1/16/2019',
+                    description: 'Original packaging, brand new',
+                    price: 200,
+                    imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/6188bLRU64L._SX425_.jpg',
+                    category: categories.ELECTRONICS,
+                    contactName: 'Neville Longbottom',
+                    email: 'nevillelongbottom@gmail.com',
+                    phone: '9087513249'
+                },
+                {
+                    id: 17,
+                    title: 'Air Mattress',
+                    addedOn: '1/17/2019',
+                    description: 'Air bed / air mattress / Intex Inflatable Camping Mattress',
+                    price: 30,
+                    imageUrl: 'https://crdms.images.consumerreports.org/w_598,h_436/prod/products/cr/models/396973-air-mattresses-simmons-beautyrest-hi-loft-raised-airbed-10001221.jpg',
+                    category: categories.FURNITURE,
+                    contactName: 'Peter Pettigrew',
+                    email: 'peterpettigrew@aol.com',
+                    phone: '9175436921'
+                },
+                {
+                    id: 18,
+                    title: '2 All in one printers',
+                    addedOn: '1/18/2019',
+                    description: 'HP Photosmart plus B209 wireless printer and scanner all in one. Comes with electric cord and USB cable',
+                    price: 50,
+                    imageUrl: 'https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c02938438.png',
+                    category: categories.ELECTRONICS,
+                    contactName: 'Rita Skeeter',
+                    email: 'rita@dailyprophet.com',
+                    phone: '2124697326'
+                },
+                {
+                    id: 19,
+                    title: 'Portable Washer',
+                    addedOn: '1/19/2019',
+                    description: 'Haier 1.5 cu ft washing machine',
+                    price: 40,
+                    imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/61ZF3vo%2BSML._SY445_.jpg',
+                    category: categories.ELECTRONICS,
+                    contactName: 'Dean Thomas',
+                    email: 'deanthomas@gmail.com',
+                    phone: '7821564983'
+                },
+                {
+                    id: 20,
+                    title: 'Tea set',
+                    addedOn: '1/20/2019',
+                    description: '10 piece tea set',
+                    price: 20,
+                    imageUrl: 'https://www.englishteastore.com/media/catalog/product/cache/6/image/9df78eab33525d08d6e5fb8d27136e95/t/e/teamint1000029124-_-00_childrens-tea-set-10-pcs-country-rose.jpg',
+                    category: categories.MISCELLANEOUS,
+                    contactName: 'Dolores Umbridge',
+                    email: 'umbridge@ministry.gov',
+                    phone: '45123684152'
                 }
             ];
 

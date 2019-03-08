@@ -9,6 +9,6 @@ describe('AdListController', function ()
         var scope = {};
         var ctrl = $controller('AdListController', { $scope: scope });
 
-        expect(scope.ads.length).toBe(3);
+        expect(scope.ads.length).toBe(10);
     }));
 });

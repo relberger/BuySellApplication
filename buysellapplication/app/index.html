@@ -23,17 +23,19 @@
                         <li><a href="pages/categories/books-category.html">Books</a></li>
                         <li><a href="pages/categories/cars-category.html">Cars</a></li>
                         <li><a href="pages/categories/games-category.html">Games</a></li>
+                        <li><a href="pages/categories/miscellaneous-category.html">Miscellaneous</a></li>
+                        <li><a href="pages/categories/electronics-category.html">Electronics</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
     </nav>
     <ul>
-        <li ng-repeat="ad in ads">
+        <li ng-repeat="ad in ads | limitTo:10">
             <img src="{{ad.imageUrl}}" alt="{{ad.title}}" height="100" width="100">
             <span><a href="pages/ad-pages/ad{{ad.id}}">{{ad.title}}</a></span>
             <span>{{ad.addedOn}}</span>
-            <span>{{ad.description}}</span>
+            <span>{{ad.description | limitTo:20}}...</span>
             <span>${{ad.price}}</span>
         </li>
     </ul>
